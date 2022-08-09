@@ -1,0 +1,20 @@
+> IPCONFIG /ALL
+Ethernet adapter Ethernet: (AHK) A_IPAddress2
+Connection-specific DNS Suffix : lan
+Description : Realtek PCIe GbE Family Controller
+IPv4 Address : 192.168.#.##(Preferred) <-- I do want this IPv4 Address
+
+Wireless LAN adapter Local Area Connection* 3: (AHK) A_IPAddress1
+Connection-specific DNS Suffix :
+Description : Microsoft Wi-Fi Direct Virtual Adapter #2
+IPv4 Address : 192.168.###.#(Preferred) <-- I do NOT want this IPv4 Address
+
+|--> I want nothing to do with any "Virtual Adapter", only my actual "Lan" or "Wifi" connections. And I get this when I connect through "Wifi" (while being connected to "Ethernet", too):
+
+Ethernet adapter Ethernet: (AHK) A_IPAddress1 (this changed from "2" to "1")
+Connection-specific DNS Suffix : lan
+
+Wireless LAN adapter Wi-Fi:  (AHK) A_IPAddress2
+Connection-specific DNS Suffix  . : lan <-- REALLY? both are "lan"?
+Description  : Intel(R) Wi-Fi 6 AX201 160MHz
+IPv4 Address : 192.168.#.###(Preferred)
